@@ -59,26 +59,36 @@ Training well-performing models can help hotel companies:
 
 ## 🚀 Project Progress
 
-### Phase 1: Data Exploration & Understanding
+### Phase 1: Data Exploration & Understanding ✅ COMPLETED
 <details>
 <summary><strong>📈 Import and Inspect</strong></summary>
 
-- [ ] **Task 1**: Import CSV file to pandas DataFrame named `hotels`
-- [ ] **Task 2**: Use `.info()` method to inspect data types and missing values
-- [ ] **Task 3**: Explore cancellation rates using `.value_counts()` on `is_canceled`
-- [ ] **Task 4**: Analyze `reservation_status` column values
-- [ ] **Task 5**: Group by `arrival_date_month` and analyze cancellation patterns
+- [x] **Task 1**: Import CSV file to pandas DataFrame named `df` ✅
+- [x] **Task 2**: Use `.info()` method to inspect data types and missing values ✅
+- [x] **Task 3**: Explore cancellation rates using `.value_counts()` on `is_canceled` ✅
+- [x] **Task 4**: Analyze `reservation_status` column values ✅
+- [x] **Task 5**: Group by `arrival_date_month` and analyze cancellation patterns ✅
+
+**Key Insights Discovered:**
+- 📊 Dataset: 119,390 bookings with 32 features
+- 🎯 Cancellation rate: ~37% overall
+- 📅 Seasonal patterns: June has highest cancellation rates
+- 🏨 Hotel type matters: City hotels have higher cancellation rates
 
 </details>
 
-### Phase 2: Data Preprocessing
+### Phase 2: Data Preprocessing 🚧 IN PROGRESS
 <details>
 <summary><strong>🧹 Data Cleaning and Preparation</strong></summary>
 
-- [ ] **Task 6**: Preview categorical columns with object datatype
+- [x] **Task 6**: Preview categorical columns with object datatype ✅
 - [ ] **Task 7**: Drop irrelevant columns for model training
 - [ ] **Task 8**: Label encode `meal` column with meaningful order
 - [ ] **Task 9**: Apply one-hot encoding to remaining categorical columns
+
+**Progress Notes:**
+- ✅ Identified 12 categorical columns including hotel, meal, country, etc.
+- 🎯 Next: Remove irrelevant features and prepare for encoding
 
 </details>
 
