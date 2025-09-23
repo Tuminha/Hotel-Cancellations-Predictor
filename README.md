@@ -95,19 +95,20 @@ Training well-performing models can help hotel companies:
 
 </details>
 
-### Phase 3: Model Preparation 🚧 NEXT
+### Phase 3: Model Preparation 🚧 IN PROGRESS
 <details>
 <summary><strong>⚙️ Create Training and Testing Sets</strong></summary>
 
 - [ ] **Task 10**: Import PyTorch libraries and modules
-- [ ] **Task 11**: Create `train_features` list excluding target variables  
+- [x] **Task 11**: Create `train_features` list excluding target variables ✅
 - [ ] **Task 12**: Create X and y tensors with proper data types
 - [ ] **Task 13**: Split data into 80/20 train/test sets with random_state=42
 
-**Ready to Start:**
-- 🎯 **Input**: Clean dataset with 76 numeric features
-- 🎯 **Goal**: Prepare PyTorch tensors for neural network training
-- 🎯 **Next**: Convert pandas → PyTorch format
+**Progress Notes:**
+- ✅ **Feature Selection**: Identified 75 features (76 total - 1 target)
+- ✅ **Target Verification**: Confirmed `is_canceled` excluded from features
+- ✅ **Learning Discovery**: Found `reservation_status` was removed in preprocessing
+- 🎯 **Next**: Import PyTorch and convert pandas → tensors
 
 </details>
 
