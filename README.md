@@ -82,13 +82,15 @@ Training well-performing models can help hotel companies:
 <summary><strong>🧹 Data Cleaning and Preparation</strong></summary>
 
 - [x] **Task 6**: Preview categorical columns with object datatype ✅
-- [ ] **Task 7**: Drop irrelevant columns for model training
+- [x] **Task 7**: Drop irrelevant columns for model training ✅
 - [ ] **Task 8**: Label encode `meal` column with meaningful order
 - [ ] **Task 9**: Apply one-hot encoding to remaining categorical columns
 
 **Progress Notes:**
 - ✅ Identified 12 categorical columns including hotel, meal, country, etc.
-- 🎯 Next: Remove irrelevant features and prepare for encoding
+- ✅ Removed 9 problematic columns (data leakage, sparse features, perfect predictors)
+- ✅ Dataset cleaned from 32 → 23 features
+- 🎯 Next: Encode meal column with ordinal mapping (Undefined→BB→HB→FB)
 
 </details>
 
