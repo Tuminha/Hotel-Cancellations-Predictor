@@ -95,32 +95,38 @@ Training well-performing models can help hotel companies:
 
 </details>
 
-### Phase 3: Model Preparation 🚧 IN PROGRESS
+### Phase 3: Model Preparation ✅ COMPLETED
 <details>
 <summary><strong>⚙️ Create Training and Testing Sets</strong></summary>
 
 - [ ] **Task 10**: Import PyTorch libraries and modules
 - [x] **Task 11**: Create `train_features` list excluding target variables ✅
-- [ ] **Task 12**: Create X and y tensors with proper data types
-- [ ] **Task 13**: Split data into 80/20 train/test sets with random_state=42
+- [x] **Task 12**: Create X and y tensors with proper data types ✅
+- [x] **Task 13**: Split data into 80/20 train/test sets with random_state=42 ✅
 
-**Progress Notes:**
-- ✅ **Feature Selection**: Identified 75 features (76 total - 1 target)
-- ✅ **Target Verification**: Confirmed `is_canceled` excluded from features
-- ✅ **Learning Discovery**: Found `reservation_status` was removed in preprocessing
-- 🎯 **Next**: Import PyTorch and convert pandas → tensors
+**Final Results:**
+- ✅ **Feature Selection**: 75 features identified (76 total - 1 target)
+- ✅ **PyTorch Tensors**: X (float32), y (long) with proper data types
+- ✅ **Train/Test Split**: 95,512 train / 23,878 test samples (80/20)
+- ✅ **Class Balance**: ~37% cancellation rate maintained in both splits
+- ✅ **Data Ready**: Perfect tensors for neural network training
 
 </details>
 
-### Phase 4: Binary Classification Model
+### Phase 4: Binary Classification Model 🚧 NEXT
 <details>
 <summary><strong>🎯 Train Neural Network for Binary Classification</strong></summary>
 
-- [ ] **Task 14**: Build neural network architecture (65→36→18→1 nodes)
+- [ ] **Task 14**: Build neural network architecture (75→36→18→1 nodes)
 - [ ] **Task 15**: Define binary cross-entropy loss and Adam optimizer
 - [ ] **Task 16**: Train model for 1000 epochs with performance tracking
 - [ ] **Task 17**: Evaluate model on testing set
 - [ ] **Task 18**: Calculate accuracy, precision, recall, and F1 scores
+
+**Ready to Start:**
+- 🎯 **Input**: 75 features (perfectly prepared tensors)
+- 🎯 **Architecture**: Multi-layer neural network for binary classification
+- 🎯 **Goal**: Predict hotel booking cancellations with high accuracy
 
 </details>
 
