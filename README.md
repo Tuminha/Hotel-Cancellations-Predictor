@@ -120,21 +120,23 @@ Training well-performing models can help hotel companies:
 - [x] **Task 14**: Build neural network architecture (75→36→18→1 nodes) ✅
 - [x] **Task 15**: Define binary cross-entropy loss and Adam optimizer ✅
 - [x] **Task 16**: Train model for 1000 epochs with performance tracking ✅
-- [ ] **Task 17**: Evaluate model on testing set
+- [x] **Task 17**: Evaluate model on testing set ✅
 - [ ] **Task 18**: Calculate accuracy, precision, recall, and F1 scores
 
-**🎉 MAJOR BREAKTHROUGH - Training Success:**
-- ✅ **Critical Fix**: Feature scaling resolved sigmoid saturation issue
+**🎉 Training Success + 🚨 Critical Overfitting Discovery:**
 - ✅ **Training Results**: Loss 0.6482→0.4624, Accuracy 63.19%→79.33%
+- ✅ **Feature Scaling Fix**: Resolved sigmoid saturation issue
 - ✅ **Learning Curve**: Smooth improvement over 1000 epochs
-- ✅ **Healthy Predictions**: Full range 0.02-0.95 (not saturated at 1.0)
-- ✅ **Network Intelligence**: 100 unique prediction values showing nuanced decisions
-- 🎯 **Next**: Test model generalization on unseen data
+- 🚨 **Overfitting Detected**: Test accuracy 37.57% vs Training 79.33% (41.76% gap!)
+- 🚨 **Test Loss**: 0.8020 vs Training 0.4624 (model memorized training data)
+- 📚 **Learning Value**: Perfect example of why validation is crucial
 
-**Technical Achievements:**
+**Technical Achievements & Lessons:**
 - 🔧 **StandardScaler**: Fixed raw feature values (2015-2017) causing saturation
 - 🧠 **BCEWithLogitsLoss**: More stable than BCELoss for training
-- 📈 **Performance**: 79.33% accuracy (excellent for hotel cancellation prediction)
+- 📊 **Overfitting Analysis**: Model memorization vs. pattern learning
+- 🎓 **ML Lesson**: Training accuracy ≠ real-world performance
+- 🔍 **Next Steps**: Regularization, dropout, early stopping needed
 
 </details>
 
