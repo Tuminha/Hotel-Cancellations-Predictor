@@ -121,22 +121,25 @@ Training well-performing models can help hotel companies:
 - [x] **Task 15**: Define binary cross-entropy loss and Adam optimizer ✅
 - [x] **Task 16**: Train model for 1000 epochs with performance tracking ✅
 - [x] **Task 17**: Evaluate model on testing set ✅
-- [ ] **Task 18**: Calculate accuracy, precision, recall, and F1 scores
+- [x] **Task 18**: Calculate accuracy, precision, recall, and F1 scores ✅
 
 **🎉 Training Success + 🚨 Critical Overfitting Discovery:**
 - ✅ **Training Results**: Loss 0.6482→0.4624, Accuracy 63.19%→79.33%
 - ✅ **Feature Scaling Fix**: Resolved sigmoid saturation issue
 - ✅ **Learning Curve**: Smooth improvement over 1000 epochs
-- 🚨 **Overfitting Detected**: Test accuracy 37.57% vs Training 79.33% (41.76% gap!)
-- 🚨 **Test Loss**: 0.8020 vs Training 0.4624 (model memorized training data)
-- 📚 **Learning Value**: Perfect example of why validation is crucial
+- 🚨 **Extreme Overfitting**: Test accuracy 37.57% vs Training 79.33% (41.76% gap!)
+- 🚨 **Model Breakdown**: Predicts 100% cancellation rate (all bookings canceled!)
+- 🚨 **Metrics**: 100% Recall, 37.57% Precision, 0% True Negatives
+- 🚨 **Root Cause**: Used raw X_test instead of X_test_scaled in evaluation
+- 📚 **Learning Value**: Double feature scaling error + extreme overfitting
 
 **Technical Achievements & Lessons:**
 - 🔧 **StandardScaler**: Fixed raw feature values (2015-2017) causing saturation
 - 🧠 **BCEWithLogitsLoss**: More stable than BCELoss for training
 - 📊 **Overfitting Analysis**: Model memorization vs. pattern learning
 - 🎓 **ML Lesson**: Training accuracy ≠ real-world performance
-- 🔍 **Next Steps**: Regularization, dropout, early stopping needed
+- 🔍 **Next Steps**: Fix evaluation with scaled data, then regularization techniques
+- 🎓 **ML Mastery**: Experienced both overfitting AND data preprocessing errors
 
 </details>
 
