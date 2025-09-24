@@ -113,20 +113,21 @@ Training well-performing models can help hotel companies:
 
 </details>
 
-### Phase 4: Binary Classification Model 🚧 NEXT
+### Phase 4: Binary Classification Model 🚧 IN PROGRESS
 <details>
 <summary><strong>🎯 Train Neural Network for Binary Classification</strong></summary>
 
-- [ ] **Task 14**: Build neural network architecture (75→36→18→1 nodes)
-- [ ] **Task 15**: Define binary cross-entropy loss and Adam optimizer
+- [x] **Task 14**: Build neural network architecture (75→36→18→1 nodes) ✅
+- [x] **Task 15**: Define binary cross-entropy loss and Adam optimizer ✅
 - [ ] **Task 16**: Train model for 1000 epochs with performance tracking
 - [ ] **Task 17**: Evaluate model on testing set
 - [ ] **Task 18**: Calculate accuracy, precision, recall, and F1 scores
 
-**Ready to Start:**
-- 🎯 **Input**: 75 features (perfectly prepared tensors)
-- 🎯 **Architecture**: Multi-layer neural network for binary classification
-- 🎯 **Goal**: Predict hotel booking cancellations with high accuracy
+**Progress Achievements:**
+- ✅ **Neural Architecture**: 3-layer network (75→36→18→1) with ReLU/Sigmoid
+- ✅ **Loss Function**: Binary Cross-Entropy for classification
+- ✅ **Optimizer**: Adam with lr=0.001 and 3,421 trainable parameters
+- 🎯 **Next**: Implement training loop with progress tracking
 
 </details>
 
